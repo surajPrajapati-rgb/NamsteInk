@@ -1,0 +1,80 @@
+blogvenv
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Django specific files
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sql
+*.sqlite3
+*.wsgi
+*.venv
+
+# Secret settings
+.env
+.env.local
+.env.*.local
+.secrets/
+*.pem
+
+# Caches
+*.cache
+*.mo
+*.pot
+*.log
+*.bak
+
+# Static and media folders (generated files)
+staticfiles/
+media/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+build/
+pip-wheel-metadata/
+
+# MyPy type checking
+.mypy_cache/
+.dmypy.json
+.pyre/
+pyright/
+
+# Testing
+.tox/
+.pytest_cache/
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+test-output/
+
+# Node.js (if using npm or yarn for frontend)
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE and editor-specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

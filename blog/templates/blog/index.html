@@ -1,0 +1,40 @@
+{%  extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    My Blog
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/post.css" %}" />
+  <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+  <link rel="stylesheet" href="{% static "blog/all-posts.css" %}" />
+{% endblock %}
+
+{% block content %}
+
+  <section id="welcome">
+    <header>
+      <img src="{% static "blog/images/suraj1.jpg" %}" alt="Suraj Prajapati - The Auther Of This Blog" />
+      <h2> DriveU Blog </h2>
+    </header>
+    <p> A Blog by DriveU: Resources Exclusively Curated for Car Owners</p>
+  </section>
+
+  <section id="latest-posts">
+    <h2>Unveiling Our Latest Blogs</h2>
+    <ul>
+      {% for post in posts %}
+        {% include "blog/includes/post.html" %}
+      {% endfor %}
+    </ul>
+  </section >
+
+<section id="about" >
+<h2>What I Do</h2>
+<p>I love programming, I love to help others and I enjoy exploring new technologies in  general!</p>
+
+<p>My goal is to keep growing as a developer - and i could help you do the same, i would be very happy !</p>
+</section>
+{% endblock %}
+
